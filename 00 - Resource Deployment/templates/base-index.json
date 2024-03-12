@@ -7,7 +7,7 @@
       "searchable": true,
       "filterable": false,
       "facetable": false,
-      "analyzer": "en.microsoft"
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "keyPhrases",
@@ -16,7 +16,7 @@
       "sortable": false,
       "filterable": true,
       "facetable": true,
-      "analyzer": "en.microsoft"
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "organizations",
@@ -25,7 +25,7 @@
       "sortable": false,
       "filterable": true,
       "facetable": true,
-      "analyzer": "en.microsoft"
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "persons",
@@ -34,7 +34,7 @@
       "sortable": false,
       "filterable": true,
       "facetable": true,
-      "analyzer": "en.microsoft"
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "locations",
@@ -43,7 +43,7 @@
       "sortable": false,
       "filterable": true,
       "facetable": true,
-      "analyzer": "en.microsoft"
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "metadata_storage_path",
@@ -53,7 +53,7 @@
       "sortable": false,
       "filterable": false,
       "facetable": false,
-      "analyzer": "en.microsoft"
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "metadata_storage_name",
@@ -62,7 +62,7 @@
       "sortable": false,
       "filterable": false,
       "facetable": false,
-      "analyzer": "en.microsoft"
+      "analyzer": "ar.microsoft"
     }
   ]
 }
