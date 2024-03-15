@@ -53,7 +53,7 @@ function CreateSearchIndex
         CallSearchAPI -url ("/indexes/"+$indexName+"?api-version=2023-11-01") -body $indexBody
         
         # Create the indexer
-        $indexerBody = (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Azure-Samples/azure-search-knowledge-mining/main/00%20-%20Resource%20Deployment/templates/base-indexer.json").Content
+        $indexerBody = (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ahmedmahmoudR/azure-search-knowledge-mining/main/00%20-%20Resource%20Deployment/templates/base-indexer.json").Content
         $indexerBody = $indexerBody -replace "{{datasource_name}}", $dataSourceName
         $indexerBody = $indexerBody -replace "{{skillset_name}}", $skillsetName   
         $indexerBody = $indexerBody -replace "{{index_name}}", $indexName   
