@@ -28,10 +28,6 @@
     {
       "sourceFieldName": "/document/content/keyphrases",
       "targetFieldName": "keyphrases"
-    },
-    {
-      "sourceFieldName": "/document/language",
-      "targetFieldName": "language"
     }
   ],
   "parameters": {
