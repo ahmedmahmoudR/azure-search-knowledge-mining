@@ -1,4 +1,4 @@
-﻿{
+{
   "dataSourceName": "{{datasource_name}}",
   "targetIndexName": "{{index_name}}",
   "skillsetName": "{{skillset_name}}",
@@ -15,24 +15,24 @@
   ],
   "outputFieldMappings": [
     {
-      "sourceFieldName": "/document/content/people",
-      "targetFieldName": "people"
+      "sourceFieldName": "/document/merged_text",
+      "targetFieldName": "content"
     },
     {
-      "sourceFieldName": "/document/content/organizations",
+      "sourceFieldName": "/document/organizations",
       "targetFieldName": "organizations"
     },
     {
-      "sourceFieldName": "/document/content/locations",
+      "sourceFieldName": "/document/persons",
+      "targetFieldName": "persons"
+    },
+    {
+      "sourceFieldName": "/document/locations",
       "targetFieldName": "locations"
     },
     {
-      "sourceFieldName": "/document/content/keyphrases",
-      "targetFieldName": "keyphrases"
-    },
-    {
-      "sourceFieldName": "/document/language",
-      "targetFieldName": "language"
+      "sourceFieldName": "/document/pages/*/keyPhrases/*",
+      "targetFieldName": "keyPhrases"
     }
   ],
   "parameters": {
