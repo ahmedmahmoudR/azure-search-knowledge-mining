@@ -6,7 +6,10 @@
       "sortable": false,
       "searchable": true,
       "filterable": false,
-      "facetable": false
+      "facetable": false,
+      "retrievable": true,
+      "analyzer": "ar.microsoft"
+      
     },
     {
       "name": "keyPhrases",
@@ -14,7 +17,9 @@
       "searchable": true,
       "sortable": false,
       "filterable": true,
-      "facetable": true
+      "facetable": true,
+      "retrievable": true,
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "organizations",
@@ -22,7 +27,9 @@
       "searchable": true,
       "sortable": false,
       "filterable": true,
-      "facetable": true
+      "facetable": true,
+       "retrievable": true,
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "persons",
@@ -30,7 +37,9 @@
       "searchable": true,
       "sortable": false,
       "filterable": true,
-      "facetable": true
+      "facetable": true,
+       "retrievable": true,
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "locations",
@@ -38,7 +47,9 @@
       "searchable": true,
       "sortable": false,
       "filterable": true,
-      "facetable": true
+      "facetable": true,
+      "retrievable": true,
+      "analyzer": "ar.microsoft"
     },
     {
       "name": "metadata_storage_path",
