@@ -44,7 +44,7 @@ function CreateSearchIndex
         CallSearchAPI -url ("/datasources/"+$dataSourceName+"?api-version=2020-06-30") -body $dataSourceBody
 
         # Create the skillset
-        $skillBody = (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Azure-Samples/azure-search-knowledge-mining/main/00%20-%20Resource%20Deployment/templates/base-skills.json").Content
+        $skillBody = (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ahmedmahmoudR/azure-search-knowledge-mining/main/00%20-%20Resource%20Deployment/templates/base-skills.json").Content
         $skillBody = $skillBody -replace "{{cog_services_key}}", $cogServicesKey
         CallSearchAPI -url ("/skillsets/"+$skillsetName+"?api-version=2020-06-30") -body $skillBody
 
