@@ -1,5 +1,10 @@
 {
   "description": "Skillset created from the portal. skillsetName: azureblob-skillset; contentField: content; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+   "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "mycogsvcs",
+    "key": "{{cog_services_key}}"
+  },
   "skills": [
     {
       "@odata.type": "#Microsoft.Skills.Text.V3.EntityRecognitionSkill",
