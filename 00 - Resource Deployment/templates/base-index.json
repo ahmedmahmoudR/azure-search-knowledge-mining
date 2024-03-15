@@ -32,7 +32,7 @@
       "analyzer": "ar.microsoft"
     },
     {
-      "name": "persons",
+      "name": "people",
       "type": "Collection(Edm.String)",
       "searchable": true,
       "sortable": false,
