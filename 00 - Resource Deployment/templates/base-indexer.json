@@ -15,24 +15,24 @@
   ],
   "outputFieldMappings": [
     {
-      "sourceFieldName": "/document/merged_text",
-      "targetFieldName": "content"
+      "sourceFieldName": "/document/content/people",
+      "targetFieldName": "people"
     },
     {
-      "sourceFieldName": "/document/organizations",
+      "sourceFieldName": "/document/content/organizations",
       "targetFieldName": "organizations"
     },
     {
-      "sourceFieldName": "/document/persons",
-      "targetFieldName": "persons"
-    },
-    {
-      "sourceFieldName": "/document/locations",
+      "sourceFieldName": "/document/content/locations",
       "targetFieldName": "locations"
     },
     {
-      "sourceFieldName": "/document/pages/*/keyPhrases/*",
-      "targetFieldName": "keyPhrases"
+      "sourceFieldName": "/document/content/keyphrases",
+      "targetFieldName": "keyphrases"
+    },
+    {
+      "sourceFieldName": "/document/language",
+      "targetFieldName": "language"
     }
   ],
   "parameters": {
