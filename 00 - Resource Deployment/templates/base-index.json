@@ -12,7 +12,7 @@
       
     },
     {
-      "name": "keyPhrases",
+      "name": "keyphrases",
       "type": "Collection(Edm.String)",
       "searchable": true,
       "sortable": false,
