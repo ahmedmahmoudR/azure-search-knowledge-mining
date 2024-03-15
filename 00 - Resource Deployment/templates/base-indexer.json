@@ -2,37 +2,36 @@
   "dataSourceName": "{{datasource_name}}",
   "targetIndexName": "{{index_name}}",
   "skillsetName": "{{skillset_name}}",
-  "fieldMappings": [
+   "fieldMappings": [
     {
       "sourceFieldName": "metadata_storage_path",
       "targetFieldName": "metadata_storage_path",
-      "mappingFunction": { "name": "base64Encode" }
-    },
-    {
-      "sourceFieldName": "metadata_storage_name",
-      "targetFieldName": "metadata_storage_name"
+      "mappingFunction": {
+        "name": "base64Encode",
+        "parameters": null
+      }
     }
   ],
   "outputFieldMappings": [
     {
-      "sourceFieldName": "/document/merged_text",
-      "targetFieldName": "content"
+      "sourceFieldName": "/document/content/people",
+      "targetFieldName": "people"
     },
     {
-      "sourceFieldName": "/document/organizations",
+      "sourceFieldName": "/document/content/organizations",
       "targetFieldName": "organizations"
     },
     {
-      "sourceFieldName": "/document/persons",
-      "targetFieldName": "persons"
-    },
-    {
-      "sourceFieldName": "/document/locations",
+      "sourceFieldName": "/document/content/locations",
       "targetFieldName": "locations"
     },
     {
-      "sourceFieldName": "/document/pages/*/keyPhrases/*",
-      "targetFieldName": "keyPhrases"
+      "sourceFieldName": "/document/content/keyphrases",
+      "targetFieldName": "keyphrases"
+    },
+    {
+      "sourceFieldName": "/document/language",
+      "targetFieldName": "language"
     }
   ],
   "parameters": {
