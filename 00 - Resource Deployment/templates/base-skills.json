@@ -55,6 +55,34 @@
         }
       ]
     },
+      {
+      "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+      "name": "#4",
+      "description": "",
+      "context": "/document",
+      "uri": "https://skillsetfn.azurewebsites.net/api/http_trigger",
+      "httpMethod": "POST",
+      "timeout": "PT30S",
+      "batchSize": 1,
+      "degreeOfParallelism": 1,
+      "inputs": [
+        {
+          "name": "formUrl",
+          "source": "/document/metadata_storage_path"
+        },
+        {
+          "name": "formSasToken",
+          "source": "/document/metadata_storage_sas_token"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ardata",
+          "targetName": "ardata"
+        }
+      ],
+      "httpHeaders": {}
+    },
     {
       "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
       "name": "#2",
