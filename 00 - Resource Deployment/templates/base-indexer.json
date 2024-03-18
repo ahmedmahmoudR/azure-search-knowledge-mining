@@ -29,6 +29,10 @@
       "sourceFieldName": "/document/content/keyphrases",
       "targetFieldName": "keyphrases"
     }
+    {
+      "sourceFieldName": "/document/ardata",
+      "targetFieldName": "ardata"
+    }
   ],
   "parameters": {
     "batchSize": 1,
