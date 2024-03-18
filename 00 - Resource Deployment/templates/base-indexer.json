@@ -28,7 +28,7 @@
     {
       "sourceFieldName": "/document/content/keyphrases",
       "targetFieldName": "keyphrases"
-    }
+    },
     {
       "sourceFieldName": "/document/ardata",
       "targetFieldName": "ardata"
